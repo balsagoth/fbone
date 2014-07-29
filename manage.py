@@ -8,16 +8,7 @@ from fbone.user import User, UserDetail, ADMIN, ACTIVE
 from fbone.utils import MALE
 
 
-app = create_app()
-manager = Manager(app)
-
-
-@manager.command
-def run():
-    """Run in local machine."""
-
-    app.run()
-
+manager = Manager(create_app)
 
 @manager.command
 def initdb():
