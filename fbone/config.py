@@ -11,6 +11,7 @@ class BaseConfig(object):
 
     # Get app root path, also can use flask.root_path.
     # ../../config.py
+    make_dir(INSTANCE_FOLDER_PATH)
     PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
     DEBUG = False

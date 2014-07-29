@@ -11,7 +11,8 @@ from datetime import datetime
 
 
 # Instance folder path, make it independent.
-INSTANCE_FOLDER_PATH = os.path.join('/tmp', 'instance')
+location = lambda x: os.path.normpath(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', x))
+INSTANCE_FOLDER_PATH = os.path.abspath(location('instance'))
 
 ALLOWED_AVATAR_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
