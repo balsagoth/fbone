@@ -1,4 +1,15 @@
+# Changes
+
+This is a fork from the original [Fbone](http://github.com/imwilsonxu) project.
+
+Some of the changes:
+
+- added a `requirements.txt` file
+-
+
 # INTRODUCTION
+
+I made this because i need some changes to fit my current workflow.
 
 Fbone (Flask bone) is a [Flask](http://flask.pocoo.org) (Python microframework) template/bootstrap/boilerplate application, with best practices.
 
