@@ -2,14 +2,17 @@
 
 This is a fork from the original [Fbone](http://github.com/imwilsonxu) project.
 
-Some of the changes:
+I made this because i need some changes to fit my current workflow.
+
+
+Changes:
 
 - added a `requirements.txt` file
--
+- instance folder on PROJECT_ROOT
+- adapt `manager.py` to new version of flask-script
 
 # INTRODUCTION
 
-I made this because i need some changes to fit my current workflow.
 
 Fbone (Flask bone) is a [Flask](http://flask.pocoo.org) (Python microframework) template/bootstrap/boilerplate application, with best practices.
 
