@@ -7,7 +7,7 @@ Flask-Testing
 Flask-WTF
 Jinja2
 MarkupSafe
-MySQL-python
+mysqlclient
 SQLAlchemy
 WTForms
 Werkzeug
@@ -33,4 +33,3 @@ requests
 six
 speaklater
 wrapt
-wsgiref

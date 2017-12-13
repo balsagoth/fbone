@@ -41,7 +41,7 @@ class BaseTestCase(TestCase):
             'password': password,
         }
         response = self.client.post('/login', data=data, follow_redirects=True)
-        assert "Logged in" in response.data
+        assert b"Logged in" in response.data
         return response
 
     def _logout(self):
@@ -71,7 +71,7 @@ class TestFrontend(BaseTestCase):
             'agree': True,
         }
         response = self.client.post('/signup', data=data, follow_redirects=True)
-        assert "Signed up" in response.data
+        assert b"Signed up" in response.data
         new_user = User.query.filter_by(email=data['email']).first()
         assert new_user.name == "new_user"
 
@@ -81,7 +81,7 @@ class TestFrontend(BaseTestCase):
         response = self.client.post('/login', data={
             'login': "demo@example.com",
             'password': "123456"}, follow_redirects=True)
-        assert "Logged in" in response.data
+        assert b"Logged in" in response.data
 
     def test_logout(self):
         self.login("demo@example.com", "123456")
